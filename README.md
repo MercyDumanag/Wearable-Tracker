@@ -1,4 +1,4 @@
-##🏃‍♂️ Wearable Activity Tracker
+##🏃‍♂️ Wearable Activity Tracker ##
 
 #📌 Overview
 
