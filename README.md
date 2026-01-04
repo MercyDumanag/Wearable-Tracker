@@ -1,27 +1,37 @@
-# Wearable-Tracker
-Wearable Activity Tracker
-Overview
+##🏃‍♂️ Wearable Activity Tracker
+📌 Overview
 
-The Wearable Activity Tracker is an embedded IoT system designed to monitor and classify human activities such as standing, walking, and running in real time. It uses an RT-Thread–based development board equipped with an inertial measurement unit (IMU) to collect motion data and process it for activity recognition.
+The Wearable Activity Tracker is an embedded Internet of Things (IoT) system designed to monitor and classify human activities—such as standing, walking, and running—in real time.
+It is built on an RT-Thread–based development board and utilizes an onboard Inertial Measurement Unit (IMU) to capture motion data and perform lightweight activity recognition.
 
-Hardware Used
+🧠 Key Features
+
+Real-time activity detection
+
+Accelerometer- and gyroscope-based motion sensing
+
+Lightweight and efficient embedded implementation
+
+Designed for wearable and low-power applications
+
+🛠️ Hardware Used
 
 RT-Thread RT-Spark Development Board
 
-ICM20608 Accelerometer and Gyroscope (onboard)
+ICM20608 Accelerometer & Gyroscope (onboard)
 
-Android Smartphone (for data visualization, if applicable)
+Android Smartphone (optional – for data visualization)
 
-Software and Tools
+💻 Software & Tools
 
 RT-Thread Operating System
 
-C programming language
+C Programming Language
 
-I2C communication interface
+I2C Communication Interface
 
-Math library for sensor data processing
 
-How It Works
+⚙️ How It Works
 
-The wearable device continuously reads acceleration and angular velocity data from the onboard IMU sensor through the I2C bus. The raw accelerometer data is converted into physical units and processed to compute motion intensity. Based on predefined thresholds, the system classifies the user’s current activity (e.g., standby, walking, or running) and outputs the result in real time.
+The wearable device continuously reads acceleration and angular velocity data from the onboard IMU sensor via the I2C bus. Raw accelerometer readings are converted into physical units and used to compute the overall motion intensity of the user.
+Using predefined thresholds, the system classifies the detected motion into activity states such as Standby, Walking, or Running, and outputs the results in real time through the serial interface or connected application.
